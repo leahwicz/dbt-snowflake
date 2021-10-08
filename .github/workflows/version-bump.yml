@@ -73,14 +73,6 @@ jobs:
           env/bin/bumpversion --allow-dirty --new-version ${{steps.variables.outputs.VERSION_NUMBER}} major
           git status
 
-      - name: Commit version bump and tag
-        uses: EndBug/add-and-commit@v7
-        with:
-          author_name: 'Leah Antkiewicz'
-          author_email: 'leah.antkiewicz@dbtlabs.com'
-          message: 'Bumping version to ${{env.version_number}}'
-          tag: v${{env.version_number}}
-
       - name: Commit version bump directly
         uses: EndBug/add-and-commit@v7
         if: ${{ !steps.variables.outputs.IS_DRY_RUN }}
