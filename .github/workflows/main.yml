@@ -102,6 +102,7 @@ jobs:
           
       - name: Update dev-requirement
         if: '${{ steps.feature-branch.outputs.exists }}'
+        continue-on-error: true
         run: |
           sed -i 's|git#egg|git'"${GITHUB_REF}"'#egg|g' dev-requirements.txt
 
