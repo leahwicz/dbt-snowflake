@@ -6,7 +6,7 @@
     <img src="https://github.com/dbt-labs/dbt-snowflake/actions/workflows/main.yml/badge.svg?event=push" alt="Unit Tests Badge"/>
   </a>
   <a href="https://github.com/dbt-labs/dbt-snowflake/actions/workflows/integration.yml">
-    <img src="https://github.com/dbt-labs/dbt-snowflake/actions/workflows/integration.yml/badge.svg?event=push" alt="Integration Tests Badge"/>
+    <img src="https://github.com/dbt-labs/dbt-snowflake/actions/workflows/integration.yml/badge.svg?event=push" alt="Integration Tests Badge"  />
   </a>
 </p>
 
