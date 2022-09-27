@@ -104,7 +104,7 @@ jobs:
       - name: Update dev-requirement
         if: '${{ steps.feature-branch.outputs.exists }}'
         run: |
-          sed -i 's|git#egg|git'"${GITHUB_REF}"'#egg|g' dev-requirements.txt
+          sed -i 's|git#egg|git@'"${GITHUB_REF}"'#egg|g' dev-requirements.txt
           cat dev-requirements.txt
 
       - name: Run tox
